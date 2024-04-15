@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="240" height="240" viewBox="0 0 240 240" xml:space="preserve">
+<defs>
+</defs>
+<title>Kiaan</title>
+<g transform="matrix(1.06 0 0 1.06 120.18 120.07)"  >
+<g style=""   >
+		<g transform="matrix(1 0 0 1 0 -77.94)" id="Layer_1-2"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(240,125,0); fill-rule: nonzero; opacity: 1;"  transform=" translate(-77.76, -34.5)" d="M 60.63 69 L 77.76 41.5 L 94.89 69 a 24.31 24.31 0 0 0 9.81 -19.3 a 23.52 23.52 0 0 0 -3.36 -12.1 h 0.09 L 77.76 0 L 54.08 37.64 h 0.1 a 23.52 23.52 0 0 0 -3.36 12.1 A 24.31 24.31 0 0 0 60.63 69 Z" stroke-linecap="round" />
+</g>
+		<g transform="matrix(1 0 0 1 0 47.44)" id="Layer_1-2"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(4,52,129); fill-rule: nonzero; opacity: 1;"  transform=" translate(-77.76, -159.88)" d="M 155.52 94.87 H 107.66 l -9 49.27 H 55.87 L 46.69 94.87 H 0 c 0 49.35 23 98.69 69 129.26 L 57.53 158.4 h 39 L 85.32 224.89 C 132.11 194.38 155.52 144.63 155.52 94.87 Z" stroke-linecap="round" />
+</g>
+		<g transform="matrix(1 0 0 1 0 -25.62)" id="Layer_1-2"  >
+<polygon style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(4,52,129); fill-rule: nonzero; opacity: 1;"  points="30.5,8.05 33.46,-8.05 -33.46,-8.05 -30.46,8.05 0.61,8.05 30.5,8.05 " />
+</g>
+</g>
+</g>
+</svg>
