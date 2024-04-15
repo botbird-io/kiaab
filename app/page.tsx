@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-export const runtime = 'edge' || 'nodejs'
+// export const runtime = 'edge' || 'nodejs'
 
 const courses = [
   {
@@ -37,7 +37,7 @@ export default function Home() {
       <div className="mt-4 grid gap-5 grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col justify-evenly ">
           <p className="text-justify">
-            KIAAN Career Point is an innovative educational institution that believes in unlocking the true potential of its students. Their approach is built on the pillars of Knowledge Integration, Academic Advancement, and Nurturing, which is embodied by a team of passionate directors. They provide an educational experience that goes beyond conventional learning by integrating knowledge and tailoring their instruction to each student's unique strengths, weaknesses, and learning styles. KIAAN Career Point is committed to helping students develop a comprehensive understanding of their subjects and connect different concepts and disciplines to form a robust knowledge base.
+            KIAAN Career Point is an innovative educational institution that believes in unlocking the true potential of its students. Their approach is built on the pillars of Knowledge Integration, Academic Advancement, and Nurturing, which is embodied by a team of passionate directors. They provide an educational experience that goes beyond conventional learning by integrating knowledge and tailoring their instruction to each student&apos;s unique strengths, weaknesses, and learning styles. KIAAN Career Point is committed to helping students develop a comprehensive understanding of their subjects and connect different concepts and disciplines to form a robust knowledge base.
           </p>
           <div className="link text-secondary">Learn More..</div>
         </div>
