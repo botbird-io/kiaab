@@ -3,7 +3,7 @@ import React, { useCallback } from 'react'
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-import {Container,Opacity} from "@tsparticles/engine";
+import {Container,Opacity,ISourceOptions} from "@tsparticles/engine";
 
 const opacity = new Opacity();
 export default function ParticleBG() {
@@ -19,12 +19,8 @@ export default function ParticleBG() {
         console.log(container);
         return Promise.resolve();
     },[])
-    const config = useMemo(()=>{
+    const config :ISourceOptions = useMemo(()=>{
         return { 
-            // fullScreen: {
-            //     enable: true,
-            //     zIndex: 0
-            // },
             "background": {
                 "color": {
                   "value": "#17182f"
@@ -52,16 +48,6 @@ export default function ParticleBG() {
                         nb_sides: 5
                     },
                 },
-                // opacity: {
-                //     value: 0.48927153781200905,
-                //     random: false,
-                //     animation: {
-                //         enable: true,
-                //         speed: 0.2,
-                //         min: 0,
-                //         sync: false
-                //     }
-                // },
                 twinkle: {
                     particles: {
                         enable: true,
@@ -104,7 +90,7 @@ export default function ParticleBG() {
             interactivity: {
                 detect_on: "canvas",
                 events: {
-                    onhover: {
+                    onHover: {
                         enable: true,
                         mode: "bubble"
                     },
@@ -112,7 +98,10 @@ export default function ParticleBG() {
                         enable: false,
                         mode: "push"
                     },
-                    resize: true
+                    resize: {
+                        enable: true,
+                        delay: 0.5
+                    }
                 },
                 resize:{
                     delay:0.5,
@@ -152,7 +141,6 @@ export default function ParticleBG() {
             {
                 init ? <Particles id="tsparticles" particlesLoaded={particleLoaded} options={config}/> : <></>
             }
-            {/* <Particles id="tsparticles" particlesLoaded={particleLoaded} options={config}/> */}
         </div>
     )
 }
