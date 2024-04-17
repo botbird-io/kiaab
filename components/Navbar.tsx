@@ -11,7 +11,7 @@ export default function Navbar() {
     <div className="navbar bg-base-100">
       <div className="navbar-start">
       <Link href={'/'} className="btn btn-ghost text-xl">
-        <Image className='' src={'/typo_logo.svg'} alt='' width={100} height={20} priority/>
+        <Image src={'/typo_logo.svg'} alt='Kiaan Typo Logo' width={101.25} height={27} priority/>
       </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

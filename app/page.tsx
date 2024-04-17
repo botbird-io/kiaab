@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import jee from '../public/jee.jpeg'
-import books from '../public/books.jpg'
-import cet from '../public/cet.jpeg'
+import jee from '../public/jee.webp'
+import books from '../public/books.webp'
+import cet from '../public/cet.webp'
 import stethoscope from '../public/stethoscope.webp'
+import  ParticleBG  from "@/components/Particle";
 // export const runtime = 'edge' || 'nodejs'
 `
 1. Elevate your aspirations in Science with our dynamic edutainment program, igniting creativity and competitive edge for State & CBSE XIth & XIIth students.
@@ -40,6 +41,7 @@ export default function Home() {
       <p>Banner to be inserted</p>
     </div>
 
+    <ParticleBG />
     {/* About Us section */}
 
     <div className="p-10 lg:px-14">
@@ -61,7 +63,7 @@ export default function Home() {
     
     {/* Courses Section */}
 
-    <div className="bg-[url('/Flexible-Courses-BG.jpg')] bg-no-repeat bg-center bg-cover mt-10 h-80 flex flex-col justify-start items-center">
+    <div className="bg-[url('/Flexible-Courses-BG.webp')] bg-no-repeat bg-center bg-cover mt-10 h-80 flex flex-col justify-start items-center">
       <div className="h-16"/>
       <h2 className="text-2xl font-bold text-center text-white shadow-sm">Flexible Courses</h2>
       <p className="lg:px-32 px-5 text-center text-slate-50 shadow-sm">Our goal is to help students enjoy learning and prepare them for achieving greater heights. Our teaching methodology is designed to focus on conceptual learning and cater to individual needs.</p>
@@ -78,7 +80,7 @@ export default function Home() {
                 <h3 className="card-title">{course.title}</h3>
                 <p className="text-sm">{course.description}</p>
                 <div className="card-actions justify-center -mb-4">
-                  <Link href={'/courses'} className="link text-secondary text-sm"> Learn More </Link>
+                  <Link href={'/courses'} className="link text-secondary text-sm"> Learn More <span className="hidden"> {`about ${course.title} Program`} </span> </Link>
                 </div>
               </div>
             </div>
@@ -89,7 +91,34 @@ export default function Home() {
 
     <div className="divider mt-10"/>
 
-    {/*  */}
+    {/* Facilities Section */}
+
+    <div className="px-10 py-5 lg:px-14">
+      <h2 className="text-2xl font-bold">Facilities</h2>
+      <div className="mt-4 grid gap-5 grid-cols-1 lg:grid-cols-2">
+        <Image src="https://t3.ftcdn.net/jpg/03/88/97/92/360_F_388979227_lKgqMJPO5ExItAuN4tuwyPeiknwrR7t2.jpg" alt="About Us" width={500} height={300} className="m-auto mt-4 lg:mt-0 lg:ml-4" />
+        <div className="flex flex-col justify-evenly ">
+          <p className="text-justify">
+            Discover our state-of-the-art facilities designed to nurture academic excellence and foster an enriching learning environment.
+          </p>
+          <ul style={{listStyleType:'disc'}}>
+            <li>Library</li>
+            <li>Computer Lab</li>
+            <li>Science Lab</li>
+            <li>Smart Classrooms</li>
+            <li>Hostel Facilities</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {/* Call to Action section */}
+
+    <div className="px-10 lg:px-14 py-16 pb-20">
+      <p className="text-center text-lg">
+        Unlock your potential and embark on a journey towards academic excellence. <span className="text-primary">Enroll today </span> and let&apos;s shape your future together!
+      </p>
+    </div>
   </>
   );
 }
