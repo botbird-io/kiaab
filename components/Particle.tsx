@@ -150,7 +150,7 @@ export default function ParticleBG() {
     return (
         <div className="bg-[#17182f] min-h-[300px] w-full absolute">
             {
-                init && <Particles id="tsparticles" particlesLoaded={particleLoaded} options={config}/>
+                init ? <Particles id="tsparticles" particlesLoaded={particleLoaded} options={config}/> : <></>
             }
             {/* <Particles id="tsparticles" particlesLoaded={particleLoaded} options={config}/> */}
         </div>
