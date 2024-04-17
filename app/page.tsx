@@ -41,7 +41,7 @@ export default function Home() {
       <p>Banner to be inserted</p>
     </div>
 
-    <ParticleBG />
+    {/* <ParticleBG /> */}
     {/* About Us section */}
 
     <div className="p-10 lg:px-14">
