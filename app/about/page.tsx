@@ -1,4 +1,4 @@
-import ParticleBG from "@/components/Particle"
+import ParticleBG from "@/components/ParticleBG"
 import { Metadata } from "next";
 import { openGraph } from "../../lib/metaData";
 
@@ -9,14 +9,12 @@ export const metadata: Metadata = {
     },
     openGraph: {
         ...openGraph,
-        siteName: "About Us | Kiaan Career Point",
         url: "https://kiaanlearning.com/about",
     },
 };
 export default function About() {
     return (
         <div>
-            <ParticleBG/>
             <h1>About</h1>
         </div>
     );

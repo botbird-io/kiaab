@@ -5,3 +5,8 @@
 .btn{
     @apply rounded-sm;
 }
+
+#tsparticles canvas{
+    /* @apply !h-[80vh]; */
+    @apply !aspect-[2.448];
+}

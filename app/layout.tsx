@@ -16,12 +16,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://kiaanlearning.com"),
   keywords : ['Kiaan Career Point', 'Kiaan Learning', 'Kiaan Career Point Nagpur', 'Kiaan Learning Nagpur', 'IIT-JEE Coaching Nagpur', 'NEET Coaching Nagpur', 'MHT-CET Coaching Nagpur', 'Coaching Institute Nagpur', 'Best Coaching Institute Nagpur', 'Best IIT-JEE Coaching Nagpur', 'Best NEET Coaching Nagpur', 'Best MHT-CET Coaching Nagpur', 'Best Coaching Institute in Nagpur', 'Best IIT-JEE Coaching Institute in Nagpur', 'Best NEET Coaching Institute in Nagpur', 'Best MHT-CET Coaching Institute in Nagpur', 'Best Coaching Institute in Nagpur', 'Best IIT-JEE Coaching Institute in Nagpur', 'Best NEET Coaching Institute in Nagpur', 'Best MHT-CET Coaching Institute in Nagpur'],
   alternates:{
-    canonical: "https://kiaanlearning.com",
+    canonical: "/",
   },
   openGraph: {
     ...openGraph,
     title : 'Kiaan Career Point',
-    url: "https://kiaanlearning.com",
+    url: "/",
   },
 };
 

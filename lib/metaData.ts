@@ -3,7 +3,7 @@ export const openGraph = {
     locale: "en_IN",
     siteName: "Kiaan Career Point",
     images: [{
-      url: "https://kiaanlearning.com/typo_logo.svg",
+      url: "/og.webp",
       alt: "Kiaan Career Point",
     }],
 }

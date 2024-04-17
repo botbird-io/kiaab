@@ -4,14 +4,8 @@ import jee from '../public/jee.webp'
 import books from '../public/books.webp'
 import cet from '../public/cet.webp'
 import stethoscope from '../public/stethoscope.webp'
-import  ParticleBG  from "@/components/Particle";
+import  ParticleBG  from "@/components/ParticleBG";
 // export const runtime = 'edge' || 'nodejs'
-`
-1. Elevate your aspirations in Science with our dynamic edutainment program, igniting creativity and competitive edge for State & CBSE XIth & XIIth students.
-2. Embark on a transformative journey towards medical excellence with our NEET/AIIMS Two Year Program, meticulously tailored for class 11 students.
-3. Engineer your success with our IIT-JEE (Mains & Advanced) Two Years Program, blending practical coaching and simulated mock tests for optimal preparation.
-4. Gear up for engineering and pharmacy triumph with our MHT-CET Two Year Program, featuring expert faculty and comprehensive study materials tailored to excellence.
-5. Dive into a world of opportunities with our holistic approach to education, fostering a stress-free learning environment and celebrating achievements in every sphere.`
 const courses = [
   {
     title : 'XI & XII Science (CBSE & State)',
@@ -36,12 +30,11 @@ const courses = [
 ]
 export default function Home() {
   return (<>
-    <div className="artboard artboard-demo phone-6 !w-full !h-[350px]">
-      <h1 className="text-3xl">Welcome to Kiaan Career Point</h1>
-      <p>Banner to be inserted</p>
+    {/* Welcome section */}
+    <div className="w-full aspect-[2.448] absolute z-10 flex items-center">
+      <h1 className="text-white drop-shadow-2xl text-2xl md:text:4xl lg:text-5xl pl-10">Welcome to Kiaan Career Point</h1>
     </div>
-
-    {/* <ParticleBG /> */}
+    <ParticleBG />
     {/* About Us section */}
 
     <div className="p-10 lg:px-14">
