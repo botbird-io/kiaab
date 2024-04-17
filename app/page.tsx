@@ -51,11 +51,9 @@ export default function Home() {
           <p className="text-justify">
             KIAAN Career Point is an innovative educational institution that believes in unlocking the true potential of its students. Their approach is built on the pillars of Knowledge Integration, Academic Advancement, and Nurturing, which is embodied by a team of passionate directors. They provide an educational experience that goes beyond conventional learning by integrating knowledge and tailoring their instruction to each student&apos;s unique strengths, weaknesses, and learning styles. KIAAN Career Point is committed to helping students develop a comprehensive understanding of their subjects and connect different concepts and disciplines to form a robust knowledge base.
           </p>
-          <Link href={'/about'} className="link text-secondary">Learn More..</Link>
+          <Link href={'/about'} className="link text-secondary">Go to About</Link>
         </div>
-        {/* <div className="artboard artboard-demo phone-6 !w-[500px] !h-[300px]"> */}
         <Image src="https://t3.ftcdn.net/jpg/03/88/97/92/360_F_388979227_lKgqMJPO5ExItAuN4tuwyPeiknwrR7t2.jpg" alt="About Us" width={500} height={300} className="m-auto mt-4 lg:mt-0 lg:ml-4" />
-        {/* </div> */}
       </div>
     </div>
 
@@ -80,7 +78,7 @@ export default function Home() {
                 <h3 className="card-title">{course.title}</h3>
                 <p className="text-sm">{course.description}</p>
                 <div className="card-actions justify-center -mb-4">
-                  <Link href={'/courses'} className="link text-secondary text-sm"> Learn More <span className="hidden"> {`about ${course.title} Program`} </span> </Link>
+                  <Link href={'/courses'} className="link text-secondary text-sm"> Learn More <span className="text-[0px]"> {`about ${course.title} Program`} </span> </Link>
                 </div>
               </div>
             </div>

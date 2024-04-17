@@ -21,15 +21,15 @@ export default function ParticleBG() {
     },[])
     const config :ISourceOptions = useMemo(()=>{
         return { 
-            "background": {
-                "color": {
-                  "value": "#17182f"
-                },
-                "image": "",
-                "position": "",
-                "repeat": "",
-                "size": "",
-                "opacity": 1
+            background: {
+                // color: {
+                //   value: "#17182f"
+                // },
+                image: "/bg.webp",
+                position: "",
+                repeat: "norepeat",
+                size: "",
+                opacity: 1
             },
             particles: {
                 number: {
@@ -94,7 +94,7 @@ export default function ParticleBG() {
                         enable: true,
                         mode: "bubble"
                     },
-                    onclick: {
+                    onClick: {
                         enable: false,
                         mode: "push"
                     },
@@ -137,9 +137,9 @@ export default function ParticleBG() {
         };
     },[]);
     return (
-        <div className="bg-[#17182f] min-h-[300px] w-full absolute">
+        <div className="min-h-[300px] w-full absolute">
             {
-                init ? <Particles id="tsparticles" particlesLoaded={particleLoaded} options={config}/> : <></>
+                init ? <Particles id="tsparticles" particlesLoaded={particleLoaded} options={config} /> : <></>
             }
         </div>
     )
