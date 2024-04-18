@@ -31,11 +31,11 @@ export default function ParticleBG() {
                     enable: false
                 },
                 background: {
-                    image: "url('/bg.webp')",
-                    position: '50% 50%',
-                    repeat: 'no-repeat',
-                    size: 'cover',
-                    opacity: 1
+                    // image: "url('/bg.webp')",
+                    // position: '50% 50%',
+                    // repeat: 'no-repeat',
+                    // size: 'cover',
+                    // opacity: 1
                 },
                 modes: {
                     trail: {

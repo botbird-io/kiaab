@@ -5,6 +5,7 @@ import books from '../public/books.webp'
 import cet from '../public/cet.webp'
 import stethoscope from '../public/stethoscope.webp'
 import  ParticleBG  from "@/components/ParticleBG";
+import { useState } from "react";
 // export const runtime = 'edge' || 'nodejs'
 const courses = [
   {
@@ -29,10 +30,12 @@ const courses = [
   }
 ]
 export default function Home() {
-  return (<>
+
+    return (<>
     {/* Welcome section */}
-    <div className="w-full aspect-[2.448] absolute z-10 flex items-center">
-      <h1 className="text-white drop-shadow-2xl text-2xl md:text:4xl lg:text-5xl pl-10">Welcome to Kiaan Career Point</h1>
+
+    <div className="w-full transition-opacity duration-300 ease-in aspect-[2.448] absolute flex items-center bg-[url(/bg.webp)] bg-cover bg-no-repeat bg-['50% 50%'] animate-opcity-0-100">
+      <h1 className="text-white drop-shadow-2xl  text-2xl md:text:4xl lg:text-5xl pl-10">Welcome to Kiaan Career Point</h1>
     </div>
     <ParticleBG />
     {/* About Us section */}
