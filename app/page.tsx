@@ -5,8 +5,7 @@ import books from '../public/books.webp'
 import cet from '../public/cet.webp'
 import stethoscope from '../public/stethoscope.webp'
 import  ParticleBG  from "@/components/ParticleBG";
-import { useState } from "react";
-// export const runtime = 'edge' || 'nodejs'
+export const runtime = 'edge' || 'nodejs'
 const courses = [
   {
     title : 'XI & XII Science (CBSE & State)',
@@ -49,7 +48,7 @@ export default function Home() {
           </p>
           <Link href={'/about'} className="link text-secondary">Go to About</Link>
         </div>
-        <Image src="https://t3.ftcdn.net/jpg/03/88/97/92/360_F_388979227_lKgqMJPO5ExItAuN4tuwyPeiknwrR7t2.jpg" alt="About Us" width={500} height={300} className="m-auto mt-4 lg:mt-0 lg:ml-4" />
+        <Image src="https://t3.ftcdn.net/jpg/03/88/97/92/360_F_388979227_lKgqMJPO5ExItAuN4tuwyPeiknwrR7t2.jpg" alt="About Us" width={500} height={300} className="m-auto mt-4 lg:mt-0 lg:ml-4 object-cover" />
       </div>
     </div>
 
@@ -68,7 +67,7 @@ export default function Home() {
           <div key={index} className="justify-self-center ">
             <div className="card md:w-72 lg:w-64 bg-base-100 shadow-xl">
               <div className="h-60 md:h-44">
-                <Image src={course.image} alt={course.title} placeholder="blur" width={300} height={100} className="w-full h-full rounded-t"/>
+                <Image src={course.image} alt={course.title} placeholder="blur" width={300} height={100} className="w-full h-full rounded-t object-cover"/>
               </div>
               <div className="card-body h-60">
                 <h3 className="card-title">{course.title}</h3>
@@ -83,14 +82,14 @@ export default function Home() {
       }
     </div>
 
-    <div className="divider mt-10"/>
+    <div className="divider mt-16"/>
 
     {/* Facilities Section */}
 
     <div className="px-10 py-5 lg:px-14">
       <h2 className="text-2xl font-bold">Facilities</h2>
       <div className="mt-4 grid gap-5 grid-cols-1 lg:grid-cols-2">
-        <Image src="https://t3.ftcdn.net/jpg/03/88/97/92/360_F_388979227_lKgqMJPO5ExItAuN4tuwyPeiknwrR7t2.jpg" alt="About Us" width={500} height={300} className="m-auto mt-4 lg:mt-0 lg:ml-4" />
+        <Image src="https://t3.ftcdn.net/jpg/03/88/97/92/360_F_388979227_lKgqMJPO5ExItAuN4tuwyPeiknwrR7t2.jpg" alt="About Us" width={500} height={300} className="m-auto mt-4 lg:mt-0 lg:ml-4 object-cover" />
         <div className="flex flex-col justify-evenly ">
           <p className="text-justify">
             Discover our state-of-the-art facilities designed to nurture academic excellence and foster an enriching learning environment.
