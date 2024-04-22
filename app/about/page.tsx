@@ -37,7 +37,7 @@ export default function About() {
 
             <div className="flex flex-col md:flex-row mt-16 justify-center items-center md:justify-normal">
                 <div>
-                    <h2 className="text-2xl">Director's Note</h2>
+                    <h2 className="text-2xl">Director&apos;s Note</h2>
                     <p className="mt-5 lg:w-4/5">
                         <strong>Mrs Swati Suyog Meshram</strong> is a passionate educator with over 15 years of experience in the field of
                         education. She holds a Master&apos;s degree in Mathematics and a Bachelor&apos;s degree in
