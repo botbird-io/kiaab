@@ -6,7 +6,15 @@
     @apply rounded-sm;
 }
 
-#tsparticles canvas{
-    /* @apply !h-[80vh]; */
-    @apply !aspect-[2.448];
+.aspect-custom{
+    @apply aspect-[1] sm:aspect-[1.5] md:aspect-[2.359]
 }
+@layer base {
+    input[type='number']::-webkit-outer-spin-button,
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number'] {
+      -webkit-appearance: none;
+      margin: 0;
+      -moz-appearance: textfield !important;
+    }
+ }
