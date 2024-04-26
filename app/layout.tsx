@@ -14,7 +14,6 @@ export const metadata: Metadata = {
   },
   description: "Kiaan Career Point is a well known coaching institute in Nagpur, Maharashtra. We provide coaching for IIT-JEE, NEET, MHT-CET.",
   metadataBase: new URL("https://kiaanlearning.com"),
-  keywords : ['Kiaan Career Point', 'Kiaan Learning', 'Kiaan Career Point Nagpur', 'Kiaan Learning Nagpur', 'IIT-JEE Coaching Nagpur', 'NEET Coaching Nagpur', 'MHT-CET Coaching Nagpur', 'Coaching Institute Nagpur', 'Best Coaching Institute Nagpur', 'Best IIT-JEE Coaching Nagpur', 'Best NEET Coaching Nagpur', 'Best MHT-CET Coaching Nagpur', 'Best Coaching Institute in Nagpur', 'Best IIT-JEE Coaching Institute in Nagpur', 'Best NEET Coaching Institute in Nagpur', 'Best MHT-CET Coaching Institute in Nagpur', 'Best Coaching Institute in Nagpur', 'Best IIT-JEE Coaching Institute in Nagpur', 'Best NEET Coaching Institute in Nagpur', 'Best MHT-CET Coaching Institute in Nagpur'],
   alternates:{
     canonical: "/",
   },

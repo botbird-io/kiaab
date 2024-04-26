@@ -51,6 +51,24 @@ export default function About() {
                     <p>Dummy image box</p>
                 </div>
             </div>
+
+            {/* Mission Section */}
+
+            <div className="flex flex-col md:flex-row mt-16 justify-center items-center md:justify-normal">
+                <div>
+                    <h2 className="text-2xl">Our Mission</h2>
+                    <p className="mt-5 lg:w-4/5">
+                        Our mission is to provide a transformative educational experience that
+                        empowers students to achieve their full potential. We aim to foster a
+                        community of lifelong learners who are equipped with the skills, knowledge,
+                        and values to succeed in a rapidly changing world.
+                    </p>
+                </div>
+                <div className="artboard artboard-demo phone h-24 mt-5">
+                    {/* <img src="/images/mission.jpg" alt="Our Mission" /> */}
+                    <p>Dummy image box</p>
+                </div>
+            </div>
         </div>
     );
 }

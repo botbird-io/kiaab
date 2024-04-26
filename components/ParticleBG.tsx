@@ -440,14 +440,14 @@ export default function ParticleBG() {
             };
     },[]);
     return (
-        <div>
-            <div className="w-full absolute">
+        <>
+            <div className="w-full absolute aspect-custom ">
                 {
-                    init ? <Particles id="tsparticles" className='w-full aspect-[2.448]' options={config} /> : <></>
+                    init ? <Particles id="tsparticles" className='w-full aspect-[1] md:aspect-[2.448]' options={config} /> : <></>
                 }
             </div>
-            <div className="w-full aspect-[2.448]" />
+            <div className="w-full aspect-custom" />
             
-        </div>
+        </>
     )
 }

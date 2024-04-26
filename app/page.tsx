@@ -5,8 +5,9 @@ import books from '../public/books.webp'
 import cet from '../public/cet.webp'
 import stethoscope from '../public/stethoscope.webp'
 import  ParticleBG  from "@/components/ParticleBG";
+import { title } from "process";
 export const runtime = 'edge' || 'nodejs'
-const courses = [
+export const courses = [
   {
     title : 'XI & XII Science (CBSE & State)',
     description: 'Elevate your aspirations in Science with our dynamic edutainment program, igniting creativity and competitive edge.',
@@ -20,7 +21,8 @@ const courses = [
   {
     title : 'IIT-JEE (Mains & Advanced)',
     description: 'Engineer your success with our IIT-JEE (Mains & Advanced) Program, blending practical coaching and simulated mock tests.',
-    image: jee
+    image: jee,
+    path : '/courses/jee'
   },
   {
     title : 'MHT-CET',
@@ -28,28 +30,35 @@ const courses = [
     image: cet
   }
 ]
+
+export const metadata ={
+  title: 'Home | Kiaan Career Point',
+}
 export default function Home() {
 
     return (<>
     {/* Welcome section */}
 
-    <div className="w-full aspect-[2.448] absolute flex items-center">
-      <Image src={'/img/Bg5.webp'} fill alt="banner" className="transition-opacity duration-300 ease-in animate-opcity-0-100 object-cover -z-10" priority/>
-      <h1 className="text-white shadow-2xl  text-2xl md:text:4xl lg:text-5xl pl-10">Welcome to Kiaan Career Point</h1>
+    <div className="w-full aspect-custom absolute flex items-center justify-around">
+      <Image src={'/img/Bg5.webp'} fill alt="banner" className="transition-opacity aspect-custom duration-300 ease-in animate-opcity-0-100 object-cover -z-10" priority/>
+      <h1 className="text-white text-3xl font-bold md:text:4xl lg:text-5xl px-5 md:pl-10">Welcome to Kiaan Career Point</h1>
+      <Image src={'/HomePage.webp'} priority height={100} width={300} className="hidden md:block sm:w-1/4 lg:w-auto xl:w-1/4 self-end" alt="home"/>
     </div>
     <ParticleBG />
     {/* About Us section */}
 
     <div className="p-10 lg:px-14">
-      <h2 className="text-2xl font-bold">About Us</h2>
-      <div className="mt-4 grid gap-5 grid-cols-1 lg:grid-cols-2">
+      <h2 className="text-2xl font-bold">About Kiaan</h2>
+      <div className="mt-4 grid gap-5 grid-cols-1 lg:grid-cols-2 ">
         <div className="flex flex-col justify-evenly ">
           <p className="text-justify">
-            KIAAN Career Point is an innovative educational institution that believes in unlocking the true potential of its students. Their approach is built on the pillars of Knowledge Integration, Academic Advancement, and Nurturing, which is embodied by a team of passionate directors. They provide an educational experience that goes beyond conventional learning by integrating knowledge and tailoring their instruction to each student&apos;s unique strengths, weaknesses, and learning styles. KIAAN Career Point is committed to helping students develop a comprehensive understanding of their subjects and connect different concepts and disciplines to form a robust knowledge base.
+            KIAAN Career Point is an innovative educational institution that believes in unlocking the true potential of our students. Our approach is built on the pillars of Knowledge Integration, Academic Advancement, and Nurturing, which is embodied by a team of passionate directors. We provide an educational experience that goes beyond conventional learning by integrating knowledge and tailoring their instruction to each student&apos;s unique strengths, weaknesses, and learning styles. KIAAN Career Point is committed to helping students develop a comprehensive understanding of their subjects and connect different concepts and disciplines to form a robust knowledge base.
           </p>
-          <Link href={'/about'} className="link text-secondary">Go to About</Link>
+          <Link href={'/about'} className="link text-secondary">Go to About Section</Link>
         </div>
-        <Image src="/building.webp" alt="About Us" width={500} height={300} className="m-auto mt-4 lg:mt-0 lg:ml-4 object-cover" />
+        {/* <div className="flex justify-center items-center "> */}
+          <Image src="/building.webp" alt="About Us" width={500} height={300} className="m-auto mt-4 lg:mt-0 lg:ml-4 object-cover w-full h-full" />
+        {/* </div> */}
       </div>
     </div>
 
@@ -74,7 +83,7 @@ export default function Home() {
                 <h3 className="card-title">{course.title}</h3>
                 <p className="text-sm">{course.description}</p>
                 <div className="card-actions justify-center -mb-4">
-                  <Link href={'/courses'} className="link text-secondary text-sm"> Learn More <span className="text-[0px]"> {`about ${course.title} Program`} </span> </Link>
+                  <Link href={course.path || '/courses'} className="link text-secondary text-sm">Learn More<span className="text-[0px]"> {`about ${course.title} Program`}</span> </Link>
                 </div>
               </div>
             </div>
