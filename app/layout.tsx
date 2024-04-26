@@ -4,7 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { openGraph } from "../lib/metaData";
-
+import WhatsAppIcon from "@/components/WhatsApp";
+import {ContextProvider} from "@/lib/ContextApi"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -33,7 +34,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar/>
-        {children}
+          <ContextProvider>
+            {children}
+          </ContextProvider>
+        <WhatsAppIcon/>
         <Footer/>
       </body>
     </html>

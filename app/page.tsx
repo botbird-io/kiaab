@@ -5,7 +5,7 @@ import books from '../public/books.webp'
 import cet from '../public/cet.webp'
 import stethoscope from '../public/stethoscope.webp'
 import  ParticleBG  from "@/components/ParticleBG";
-import { title } from "process";
+import PopUp from "@/components/PopUp";
 export const runtime = 'edge' || 'nodejs'
 export const courses = [
   {
@@ -42,9 +42,11 @@ export default function Home() {
     <div className="w-full aspect-custom absolute flex items-center justify-around">
       <Image src={'/img/Bg5.webp'} fill alt="banner" className="transition-opacity aspect-custom duration-300 ease-in animate-opcity-0-100 object-cover -z-10" priority/>
       <h1 className="text-white text-3xl font-bold md:text:4xl lg:text-5xl px-5 md:pl-10">Welcome to Kiaan Career Point</h1>
-      <Image src={'/HomePage.webp'} priority height={100} width={300} className="hidden md:block sm:w-1/4 lg:w-auto xl:w-1/4 self-end" alt="home"/>
+      <Image src={'/HomePage.webp'} priority height={100} width={300} className="hidden md:block sm:w-1/4 lg:w-auto z-10 xl:w-1/4 self-end" alt="home"/>
     </div>
     <ParticleBG />
+
+    <PopUp />
     {/* About Us section */}
 
     <div className="p-10 lg:px-14">
