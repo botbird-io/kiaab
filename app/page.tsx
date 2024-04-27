@@ -100,13 +100,16 @@ export default function Home() {
 
     <div className="px-10 py-5 lg:px-14">
       <h2 className="text-2xl font-bold">Facilities</h2>
-      <div className="mt-4 grid gap-5 grid-cols-1 lg:grid-cols-2">
-        <Image src="https://t3.ftcdn.net/jpg/03/88/97/92/360_F_388979227_lKgqMJPO5ExItAuN4tuwyPeiknwrR7t2.jpg" alt="About Us" width={500} height={300} className="m-auto mt-4 lg:mt-0 lg:ml-4 object-cover" />
-        <div className="flex flex-col justify-evenly ">
+      <div className="mt-4 grid gap-5 grid-cols-1 lg:grid-cols-2 justify-around">
+        <video controls poster="bg.webp">
+          <source src="/kiaan.mp4" type="video/mp4"/>
+          Your browser does not support the video tag.
+        </video>
+        <div className="flex flex-col justify-evenly">
           <p className="text-justify">
             Discover our state-of-the-art facilities designed to nurture academic excellence and foster an enriching learning environment.
           </p>
-          <ul style={{listStyleType:'disc'}}>
+          <ul className="list-inside list-disc">
             <li>Library</li>
             <li>Computer Lab</li>
             <li>Science Lab</li>
