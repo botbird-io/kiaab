@@ -5,7 +5,7 @@ import books from '../public/books.webp'
 import cet from '../public/cet.webp'
 import stethoscope from '../public/stethoscope.webp'
 import  ParticleBG  from "@/components/ParticleBG";
-import { title } from "process";
+import PopUp from "@/components/PopUp";
 export const runtime = 'edge' || 'nodejs'
 export const courses = [
   {
@@ -42,9 +42,11 @@ export default function Home() {
     <div className="w-full aspect-custom absolute flex items-center justify-around">
       <Image src={'/img/Bg5.webp'} fill alt="banner" className="transition-opacity aspect-custom duration-300 ease-in animate-opcity-0-100 object-cover -z-10" priority/>
       <h1 className="text-white text-3xl font-bold md:text:4xl lg:text-5xl px-5 md:pl-10">Welcome to Kiaan Career Point</h1>
-      <Image src={'/HomePage.webp'} priority height={100} width={300} className="hidden md:block sm:w-1/4 lg:w-auto xl:w-1/4 self-end" alt="home"/>
+      <Image src={'/HomePage.webp'} priority height={100} width={300} className="hidden md:block sm:w-1/4 lg:w-auto z-10 xl:w-1/4 self-end" alt="home"/>
     </div>
     <ParticleBG />
+
+    <PopUp />
     {/* About Us section */}
 
     <div className="p-10 lg:px-14">
@@ -98,13 +100,16 @@ export default function Home() {
 
     <div className="px-10 py-5 lg:px-14">
       <h2 className="text-2xl font-bold">Facilities</h2>
-      <div className="mt-4 grid gap-5 grid-cols-1 lg:grid-cols-2">
-        <Image src="https://t3.ftcdn.net/jpg/03/88/97/92/360_F_388979227_lKgqMJPO5ExItAuN4tuwyPeiknwrR7t2.jpg" alt="About Us" width={500} height={300} className="m-auto mt-4 lg:mt-0 lg:ml-4 object-cover" />
-        <div className="flex flex-col justify-evenly ">
+      <div className="mt-4 grid gap-5 grid-cols-1 lg:grid-cols-2 justify-around">
+        <video controls poster="bg.webp">
+          <source src="/kiaan.mp4" type="video/mp4"/>
+          Your browser does not support the video tag.
+        </video>
+        <div className="flex flex-col justify-evenly">
           <p className="text-justify">
             Discover our state-of-the-art facilities designed to nurture academic excellence and foster an enriching learning environment.
           </p>
-          <ul style={{listStyleType:'disc'}}>
+          <ul className="list-inside list-disc">
             <li>Library</li>
             <li>Computer Lab</li>
             <li>Science Lab</li>

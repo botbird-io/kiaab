@@ -1,6 +1,27 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
         <loc>https://kiaanlearning.com/</loc>
+        <video:video>
+            <video:thumbnail_loc>https://kiaanlearning.com/bg.webp</video:thumbnail_loc>
+            <video:title>About Kiaan Career Point</video:title>
+            <video:description>
+                
+            </video:description>
+            <video:content_loc>
+                https://kiaanlearning.com/kiaan.mp4
+            </video:content_loc>
+            <video:duration>53</video:duration>
+            <video:rating>4.7</video:rating>
+            <video:view_count>2313</video:view_count>
+            <video:publication_date>2024-04-27T19:20:30+08:00</video:publication_date>
+            <video:family_friendly>yes</video:family_friendly>
+            <video:live>no</video:live>
+            <video:tag>Guidance</video:tag>
+            <video:tag>NEET</video:tag>
+            <video:tag>Entrance Exam</video:tag>
+            <video:tag>JEE</video:tag>
+            <video:tag>Coaching</video:tag>
+        </video:video>
         <lastmod>2024-04-17T11:04:09+00:00</lastmod>
         <priority>1.00</priority>
     </url>
@@ -9,11 +30,11 @@
         <lastmod>2024-04-17T11:04:09+00:00</lastmod>
         <priority>0.80</priority>
     </url>
-    <!-- <url>
+    <url>
         <loc>https://kiaanlearning.com/contact</loc>
         <lastmod>2024-04-23T11:04:09+00:00</lastmod>
         <priority>0.90</priority>
-    </url> -->
+    </url>
     <url>
         <loc>https://kiaanlearning.com/courses</loc>
         <lastmod>2024-04-23T11:04:09+00:00</lastmod>

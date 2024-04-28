@@ -1,12 +1,15 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import ListItem from './ListNavItems';
 const pages = [
   { name: 'Home', href: '/' },
   { name:"Courses", href:"/courses"},
   { name: 'About', href: '/about' },
   { name: 'Gallery', href: '/gallery' },
   { name: 'Contact', href: '/contact' },
+  { name: 'Download Brochure', href: 'https://drive.google.com/uc?export=download&id=', target: '_blank' },
 ];
+
 export default function Navbar() {
   return (
     <div className="navbar bg-base-100">
@@ -19,7 +22,7 @@ export default function Navbar() {
         <ul className="menu menu-horizontal px-1">
           {pages.map((page) => (
             <li key={page.name}>
-              <Link href={page.href} className="btn btn-ghost">
+              <Link href={page.href} target={page.target} className="btn btn-ghost">
                 {page.name}
               </Link>
             </li>
@@ -32,13 +35,9 @@ export default function Navbar() {
           <div tabIndex={0} aria-label='menu' role="button" className="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
           </div>
-          <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[11] p-2 shadow bg-base-100 rounded-box w-52">
             {pages.map((page) => (
-              <li key={page.name}>
-                <Link href={page.href} className="">
-                  {page.name}
-                </Link>
-              </li>
+              <ListItem key={page.name} page={page} />
             ))}
           </ul>
         </div>
