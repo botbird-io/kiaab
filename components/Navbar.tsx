@@ -5,9 +5,8 @@ const pages = [
   { name: 'Home', href: '/' },
   { name:"Courses", href:"/courses"},
   { name: 'About', href: '/about' },
-  { name: 'Gallery', href: '/gallery' },
   { name: 'Contact', href: '/contact' },
-  { name: 'Download Brochure', href: 'https://drive.google.com/uc?export=download&id=', target: '_blank' },
+  { name: 'Download Brochure', href: 'https://drive.google.com/uc?export=download&id=1yrtFwhJVW7CybUN8wahKIWNQWyp6wdP9', target: '_blank' },
 ];
 
 export default function Navbar() {

@@ -20,9 +20,10 @@
  }
 
  :root {
-    --radial-gradient-background: 250, 250, 250;
+    --radial-gradient-background: 0,0,0;
     --solid-color-background: 44, 183, 66;
-    --overlay-color: 255, 255, 255;
+    --solid-color-background1: 183, 44, 66;
+    --overlay-color: 0,0,0;
 }
 
 
@@ -33,6 +34,15 @@
             transparent 60%
         )
         rgba(var(--solid-color-background), 1);
+}
+
+.radial-gradient-1 {
+    background: radial-gradient(
+            circle at 50% 0%,
+            rgba(var(--radial-gradient-background), 0.05) 0%,
+            transparent 60%
+        )
+        rgba(var(--solid-color-background1), 1);
 }
 
 .linear-mask {

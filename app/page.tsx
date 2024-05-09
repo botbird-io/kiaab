@@ -6,6 +6,8 @@ import cet from '../public/cet.webp'
 import stethoscope from '../public/stethoscope.webp'
 import  ParticleBG  from "@/components/ParticleBG";
 import PopUp from "@/components/PopUp";
+import Testinomial from "@/components/Testinomial";
+import GallerySlider from "@/components/GallerySlider";
 export const runtime = 'edge' || 'nodejs'
 export const courses = [
   {
@@ -96,6 +98,12 @@ export default function Home() {
 
     <div className="divider mt-16"/>
 
+    {/* Gallery Section */}
+    <div className="px-10 py-5 lg:px-14">
+      <h2 className="text-2xl font-bold">Gallery</h2>
+      <GallerySlider/>
+    </div>
+
     {/* Facilities Section */}
 
     <div className="px-10 py-5 lg:px-14">
@@ -122,11 +130,15 @@ export default function Home() {
 
     {/* Call to Action section */}
 
-    <div className="px-10 lg:px-14 py-16 pb-20">
+    <div className="px-10 lg:px-14 pt-16 ">
       <p className="text-center text-lg">
         Unlock your potential and embark on a journey towards academic excellence. <span className="text-primary">Enroll today </span> and let&apos;s shape your future together!
       </p>
     </div>
+
+     {/* Testinomial Section */}
+     
+     <Testinomial/>
   </>
   );
 }

@@ -1,11 +1,11 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://kiaanlearning.com/</loc>
         <video:video>
             <video:thumbnail_loc>https://kiaanlearning.com/bg.webp</video:thumbnail_loc>
             <video:title>About Kiaan Career Point</video:title>
             <video:description>
-                
+                Get the best guidance for NEET and JEE entrance exams with Kiaan Career Point. We provide the best coaching for NEET and JEE entrance exams.
             </video:description>
             <video:content_loc>
                 https://kiaanlearning.com/kiaan.mp4
@@ -22,6 +22,12 @@
             <video:tag>JEE</video:tag>
             <video:tag>Coaching</video:tag>
         </video:video>
+        <image:image>
+            <image:loc>https://kiaanlearning.com/pop_up.pg</image:loc>
+            <image:caption>Kiaan Career Point</image:caption>
+            <image:geo_location>Nagpur</image:geo_location>
+            <image:title>Kiaan Career Point</image:title>
+        </image:image>
         <lastmod>2024-04-17T11:04:09+00:00</lastmod>
         <priority>1.00</priority>
     </url>
