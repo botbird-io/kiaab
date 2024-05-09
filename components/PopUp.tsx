@@ -18,7 +18,7 @@ export default function PopUp() {
         return () => {
             clearTimeout(id);
         }
-    },[])
+    },[setState,state.showModal])
     return(
         <dialog id="my_modal" className="modal modal-bottom sm:modal-middle">
             <div className="modal-box">

@@ -5,9 +5,8 @@ const pages = [
   { name: 'Home', href: '/' },
   { name:"Courses", href:"/courses"},
   { name: 'About', href: '/about' },
-  { name: 'Gallery', href: '/gallery' },
   { name: 'Contact', href: '/contact' },
-  { name: 'Download Brochure', href: 'https://drive.google.com/uc?export=download&id=', target: '_blank' },
+  { name: 'Download Brochure', href: 'https://drive.google.com/uc?export=download&id=1yrtFwhJVW7CybUN8wahKIWNQWyp6wdP9', target: '_blank' },
 ];
 
 export default function Navbar() {
@@ -15,7 +14,7 @@ export default function Navbar() {
     <div className="navbar bg-base-100">
       <div className="navbar-start">
       <Link href={'/'} className="btn btn-ghost text-xl">
-        <Image src={'/typo_logo.svg'} alt='Kiaan Typo Logo' width={101.25} height={27} priority/>
+        <Image src={'/typo_logo.svg'} alt='Kiaan Typo Logo' width={101.25} height={27} className='h-auto w-28' priority/>
       </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

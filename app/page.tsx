@@ -6,6 +6,8 @@ import cet from '../public/cet.webp'
 import stethoscope from '../public/stethoscope.webp'
 import  ParticleBG  from "@/components/ParticleBG";
 import PopUp from "@/components/PopUp";
+import Testinomial from "@/components/Testinomial";
+import GallerySlider from "@/components/GallerySlider";
 export const runtime = 'edge' || 'nodejs'
 export const courses = [
   {
@@ -40,7 +42,7 @@ export default function Home() {
     {/* Welcome section */}
 
     <div className="w-full aspect-custom absolute flex items-center justify-around">
-      <Image src={'/img/Bg5.webp'} fill alt="banner" className="transition-opacity aspect-custom duration-300 ease-in animate-opcity-0-100 object-cover -z-10" priority/>
+      <Image src={'/Bg5.webp'} fill alt="banner" className="transition-opacity aspect-custom duration-300 ease-in animate-opcity-0-100 object-cover -z-10" priority/>
       <h1 className="text-white text-3xl font-bold md:text:4xl lg:text-5xl px-5 md:pl-10">Welcome to Kiaan Career Point</h1>
       <Image src={'/HomePage.webp'} priority height={100} width={300} className="hidden md:block sm:w-1/4 lg:w-auto z-10 xl:w-1/4 self-end" alt="home"/>
     </div>
@@ -96,6 +98,14 @@ export default function Home() {
 
     <div className="divider mt-16"/>
 
+    {/* Gallery Section */}
+    <div className="px-10 py-5 lg:px-14">
+      <h2 className="text-2xl font-bold">Gallery</h2>
+      <GallerySlider/>
+    </div>
+
+    <div className="divider mt-6"/>
+    
     {/* Facilities Section */}
 
     <div className="px-10 py-5 lg:px-14">
@@ -122,11 +132,15 @@ export default function Home() {
 
     {/* Call to Action section */}
 
-    <div className="px-10 lg:px-14 py-16 pb-20">
+    <div className="px-10 lg:px-14 pt-16 ">
       <p className="text-center text-lg">
         Unlock your potential and embark on a journey towards academic excellence. <span className="text-primary">Enroll today </span> and let&apos;s shape your future together!
       </p>
     </div>
+
+     {/* Testinomial Section */}
+     
+     <Testinomial/>
   </>
   );
 }

@@ -1,6 +1,6 @@
 'use client'
 import {useState,useEffect, FormEvent, ChangeEvent} from 'react'
-
+import { useToast } from './Toast';
 export default function ContactForm() {
     const [formData, setFormData] = useState({
         "entry.2096431628": "",
@@ -9,7 +9,7 @@ export default function ContactForm() {
         "entry.1330762188": "No",
         "entry.1111823797": "" 
     });
-
+    const {showToast} = useToast();
     const handleInputData = (input:string) => (e:ChangeEvent<HTMLInputElement | HTMLTextAreaElement >) => {
         const target = e.target as HTMLInputElement | HTMLTextAreaElement;
         if (input === "entry.1330762188") {
@@ -38,8 +38,13 @@ export default function ContactForm() {
               },
               mode: "no-cors",
             });
+            if (res.ok) {
+                showToast("Form Submitted Successfully","success")
+            } else {
+                showToast("Form Submission Failed","error")
+            }
         }catch(e){
-            console.error(e);
+            showToast("Form Submission Failed","error")
         }
       }
     
