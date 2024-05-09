@@ -42,7 +42,7 @@ export default function Home() {
     {/* Welcome section */}
 
     <div className="w-full aspect-custom absolute flex items-center justify-around">
-      <Image src={'/img/Bg5.webp'} fill alt="banner" className="transition-opacity aspect-custom duration-300 ease-in animate-opcity-0-100 object-cover -z-10" priority/>
+      <Image src={'/Bg5.webp'} fill alt="banner" className="transition-opacity aspect-custom duration-300 ease-in animate-opcity-0-100 object-cover -z-10" priority/>
       <h1 className="text-white text-3xl font-bold md:text:4xl lg:text-5xl px-5 md:pl-10">Welcome to Kiaan Career Point</h1>
       <Image src={'/HomePage.webp'} priority height={100} width={300} className="hidden md:block sm:w-1/4 lg:w-auto z-10 xl:w-1/4 self-end" alt="home"/>
     </div>
@@ -104,6 +104,8 @@ export default function Home() {
       <GallerySlider/>
     </div>
 
+    <div className="divider mt-6"/>
+    
     {/* Facilities Section */}
 
     <div className="px-10 py-5 lg:px-14">

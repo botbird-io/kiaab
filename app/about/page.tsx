@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { openGraph } from "../../lib/metaData";
 import Image from "next/image";
 import swati from '@/public/Swati-Meshram-Director-KIAAN.webp';
-import building from '@/public/KIAAN Building_1.webp';
+import building from '@/public/KIAAN_Building_1.webp';
 import emblem from '@/public/emblem_logo.svg';
 export const metadata: Metadata = {
     title: "About Us",

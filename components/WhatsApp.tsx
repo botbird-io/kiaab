@@ -3,7 +3,7 @@ import {motion} from 'framer-motion';
 import { useState ,useEffect} from 'react';
 import { usePathname } from 'next/navigation';
 export default function WhatsAppIcon(){
-    const [show, setShow] = useState(true)
+    const [show, setShow] = useState(false)
     const path = usePathname()
     useEffect(() => {
         setShow(path !== '/scholarship')

@@ -23,7 +23,49 @@
             <video:tag>Coaching</video:tag>
         </video:video>
         <image:image>
-            <image:loc>https://kiaanlearning.com/pop_up.pg</image:loc>
+            <image:loc>https://kiaanlearning.com/pop_up.jpg</image:loc>
+            <image:caption>Kiaan Career Point</image:caption>
+            <image:geo_location>Nagpur</image:geo_location>
+            <image:title>Kiaan Career Point</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://kiaanlearning.com/</image:loc>
+            <image:caption>Kiaan Career Point</image:caption>
+            <image:geo_location>Nagpur</image:geo_location>
+            <image:title>Kiaan Career Point</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://kiaanlearning.com/pop_up.jpg</image:loc>
+            <image:caption>Kiaan Career Point</image:caption>
+            <image:geo_location>Nagpur</image:geo_location>
+            <image:title>Kiaan Career Point</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://kiaanlearning.com/pop_up.jpg</image:loc>
+            <image:caption>Kiaan Career Point</image:caption>
+            <image:geo_location>Nagpur</image:geo_location>
+            <image:title>Kiaan Career Point</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://kiaanlearning.com/pop_up.jpg</image:loc>
+            <image:caption>Kiaan Career Point</image:caption>
+            <image:geo_location>Nagpur</image:geo_location>
+            <image:title>Kiaan Career Point</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://kiaanlearning.com/pop_up.jpg</image:loc>
+            <image:caption>Kiaan Career Point</image:caption>
+            <image:geo_location>Nagpur</image:geo_location>
+            <image:title>Kiaan Career Point</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://kiaanlearning.com/pop_up.jpg</image:loc>
+            <image:caption>Kiaan Career Point</image:caption>
+            <image:geo_location>Nagpur</image:geo_location>
+            <image:title>Kiaan Career Point</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://kiaanlearning.com/pop_up.jpg</image:loc>
             <image:caption>Kiaan Career Point</image:caption>
             <image:geo_location>Nagpur</image:geo_location>
             <image:title>Kiaan Career Point</image:title>
@@ -49,6 +91,12 @@
     <url>
         <loc>https://kiaanlearning.com/courses/jee</loc>
         <lastmod>2024-04-23T11:04:09+00:00</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://kiaanlearning.com/scholarship</loc>
+        <lastmod>2024-05-08T11:04:09+00:00</lastmod>
         <priority>1</priority>
     </url>
+
 </urlset>
