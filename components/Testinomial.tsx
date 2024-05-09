@@ -55,7 +55,7 @@ export default function Testinomial() {
     <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16">
       <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Don't just trust us...
+          Don&apos;t just trust us...
         </h2>
 
         <p className="mt-4 text-gray-700">
