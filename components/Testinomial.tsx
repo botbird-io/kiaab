@@ -62,7 +62,7 @@ export default function Testinomial() {
           See what our students and parents have to say about their experience with our classes.
         </p>
 
-        <div className="hidden lg:mt-8 lg:flex lg:gap-4">
+        <div className="hidden lg:mt-8 lg:flex lg:gap-4 justify-center">
           <button
             aria-label="Previous slide"
             onClick={(e:any) =>

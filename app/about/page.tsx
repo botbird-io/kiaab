@@ -18,8 +18,7 @@ export const metadata: Metadata = {
 export default function About() {
     return (
         <div className="p-5 lg:p-10">
-            
-                    <h1 className="text-2xl md:text-center mt-12">About Us</h1>
+            <h1 className="text-2xl md:text-center mt-12">About Us</h1>
             <div className="flex flex-col md:flex-row-reverse  justify-center items-center md:justify-normal">
                 <div className="md:flex md:flex-col md:items-center">
                     <p className="mt-5 md:text-justify lg:w-4/5">
@@ -39,7 +38,7 @@ export default function About() {
                         necessary support to excel.
                     </p>
                 </div>
-                <div className="mt-5 md:mt-0 p-10 md:p-0 md:ml-7 md:-mr-7">
+                <div className="mt-5 md:mt-0 p-10 lg:p-0 lg:ml-7 lg:-mr-7">
                     <Image src={emblem} width={900} height={900} alt="Kiaan emblem logo" className="rounded-sm"/>
                 </div>
             </div>
