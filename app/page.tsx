@@ -7,7 +7,8 @@ import stethoscope from '../public/stethoscope.webp'
 import  ParticleBG  from "@/components/ParticleBG";
 import PopUp from "@/components/PopUp";
 import Testinomial from "@/components/Testinomial";
-import GallerySlider from "@/components/GallerySlider";
+import GalleryFetch from "@/components/GalleryFetch";
+import { Suspense } from "react";
 export const runtime = 'edge' || 'nodejs'
 export const courses = [
   {
@@ -101,7 +102,9 @@ export default function Home() {
     {/* Gallery Section */}
     <div className="px-10 py-5 lg:px-14">
       <h2 className="text-2xl font-bold">Gallery</h2>
-      <GallerySlider/>
+      <Suspense fallback={<div>Loading...</div>}>
+        <GalleryFetch/>
+      </Suspense>
     </div>
 
     <div className="divider mt-6"/>

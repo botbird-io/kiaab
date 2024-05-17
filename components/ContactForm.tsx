@@ -38,11 +38,8 @@ export default function ContactForm() {
               },
               mode: "no-cors",
             });
-            if (res.ok) {
-                showToast("Form Submitted Successfully","success")
-            } else {
-                showToast("Form Submission Failed","error")
-            }
+            showToast("Form Submitted Successfully","success")
+            
         }catch(e){
             showToast("Form Submission Failed","error")
         }
