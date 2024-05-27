@@ -43,7 +43,7 @@ export default function ScholarshipForm() {
               },
               mode: "no-cors",
             });
-            showToast("Form Submission Failed","error")
+            showToast("Form Submission Successful","success")
         }catch(e){
             showToast("Form Submission Failed","error")
         }

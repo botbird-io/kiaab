@@ -33,7 +33,7 @@ export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       {children}
       {message && 
       <div className='toast toast-center'>
-        <div className={`alert alert-${type}`}>
+        <div className={`alert alert-${type} z-30`}>
           {icons[type]}
           <span>{message}</span>
           <div className='hidden'>

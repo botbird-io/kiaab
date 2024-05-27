@@ -1,13 +1,15 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import ListItem from './ListNavItems';
+import DownloadBrochure from './DownloadBrochure';
+import DownloadBrochureForm from './DownloadBrochureForm';
 const pages = [
   { name: 'Home', href: '/' },
   { name:"Courses", href:"/courses"},
   { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
-  { name: 'Download Brochure', href: 'https://drive.google.com/uc?export=download&id=1yrtFwhJVW7CybUN8wahKIWNQWyp6wdP9', target: '_blank' },
 ];
+// { name: 'Download Brochure', href: 'https://drive.google.com/uc?export=download&id=1yrtFwhJVW7CybUN8wahKIWNQWyp6wdP9', target: '_blank' },
 
 export default function Navbar() {
   return (
@@ -21,11 +23,12 @@ export default function Navbar() {
         <ul className="menu menu-horizontal px-1">
           {pages.map((page) => (
             <li key={page.name}>
-              <Link href={page.href} target={page.target} className="btn btn-ghost">
+              <Link href={page.href} className="btn btn-ghost">
                 {page.name}
               </Link>
             </li>
           ))}
+          <DownloadBrochure classes="btn btn-ghost"/>
         </ul>
       </div>
       <div className="navbar-end">
@@ -38,9 +41,11 @@ export default function Navbar() {
             {pages.map((page) => (
               <ListItem key={page.name} page={page} />
             ))}
+            <DownloadBrochure classes=''/>
           </ul>
         </div>
       </div>
+      <DownloadBrochureForm/>
     </div>
   );
 }
