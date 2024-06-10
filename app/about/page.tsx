@@ -4,7 +4,7 @@ import Image from "next/image";
 import swati from '@/public/Swati-Meshram-Director-KIAAN.webp';
 import building from '@/public/KIAAN_Building_1.webp';
 import emblem from '@/public/emblem_logo.svg';
-import Sugadh from '@/public/Sugadh.jpg'
+import Sugat from '@/public/Sugat.jpg'
 export const metadata: Metadata = {
     title: "About Us",
     description: "KIAAN Career Point is founded on the pillars of Knowledge Integration, Academic Advancement, and Nurturing—a philosophy that resonates through our dedicated team of directors.",
@@ -65,15 +65,11 @@ export default function About() {
             <div className="flex flex-col md:flex-row mt-16 justify-center items-center md:justify-end">
                 <div className="mt-5 md:mt-0 p-3 md:p-0" >
                     {/* <img src="/images/swati.jpg" alt="Mrs Swati Suyog Meshram" /> */}
-                    <Image src={Sugadh} width={900} height={900} alt="Director Swati Suyog Meshram" className="rounded-sm"/>
+                    <Image src={Sugat} width={900} height={900} alt="Director Sugat Anil Wankhede" className="rounded-sm"/>
                 </div>
                 <div>
                     <p className="mt-5 ml-auto lg:w-4/5">
-                        <strong>Mrs Swati Suyog Meshram</strong> is a passionate educator with over 15 years of experience in the field of
-                        education. She holds a Master&apos;s degree in Mathematics and a Bachelor&apos;s degree in
-                        Education. Her expertise lies in creating innovative teaching methodologies that
-                        cater to the individual needs of students. Her commitment to academic excellence
-                        and student welfare is the driving force behind KIAAN Career Point.
+                        <strong>Mr. Sugat Anil Wankhede</strong> Our mission is to ignite your academic potential. With over 15 years of experience, our expert faculty offers personalized guidance in state-of-the-art facilities. Join our comprehensive programs for IIT-JEE, NEET, and MHT-CET, and embark on a journey to academic excellence.
                     </p>
                 </div>
             </div>
